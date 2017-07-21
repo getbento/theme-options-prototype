@@ -5,7 +5,15 @@
 
 
 
-<html lang="en" class="no-js"><head>
+<html lang="en" class="no-js">
+
+
+
+
+
+
+
+<head>
 
 
 
@@ -69,7 +77,15 @@
 
 
 
-</head><body>
+</head>
+
+
+
+
+
+
+
+<body>
 
 
 
@@ -118,7 +134,54 @@
 
 
 <nav class="bp-nav">
-<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a><!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a--><a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a><a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a></nav></div></header><button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button><nav id="ml-menu" class="menu"><button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button><div class="menu__wrap"><ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+
+
+
+<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+
+
+
+<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+
+
+
+<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+
+
+
+<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+
+
+
+</nav>
+
+
+
+</div>
+
+
+
+</header>
+
+
+
+<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+
+
+
+<nav id="ml-menu" class="menu">
+
+
+
+<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+
+
+
+<div class="menu__wrap">
+
+
+
+<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
 
 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Logo</a></li>
 
@@ -132,7 +195,11 @@
 
 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-6" aria-owns="submenu-6" href="#">Custom Styles</a></li>
 
-</ul><!-- Submenu 1 -->
+</ul>
+
+
+
+<!-- Submenu 1 -->
 
 <ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Logo">
 
@@ -140,7 +207,11 @@
 
 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-2" aria-owns="submenu-1-2" href="#">Mobile</a></li>
 
-</ul><!-- Submenu 1-1 -->
+</ul>
+
+
+
+<!-- Submenu 1-1 -->
 
 <ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Main Logo">
 
@@ -181,7 +252,11 @@
 
 <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Max height in collapsed header. (Default: 30px)</a></li>
 
-</ul><!-- Submenu 2 -->
+</ul>
+
+
+
+<!-- Submenu 2 -->
 
 <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Layout Options">
 
@@ -775,7 +850,67 @@
 
 </div>
 
-<!-- /view --><script src="{{ static('js/classie.js') }}"></script><script src="{{ static('js/dummydata.js') }}"></script><script src="{{ static('js/main.js') }}"></script><script>(function() {var menuEl = document.getElementById('ml-menu'),mlmenu = new MLMenu(menuEl, {// breadcrumbsCtrl : true, // show breadcrumbs// initialBreadcrumb : 'all', // initial breadcrumb textbackCtrl : false, // show back button// itemsDelayInterval : 60, // delay between each menu item sliding animationonItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])});// mobile menu toggle
+<!-- /view -->
+
+
+
+<script src="{{ static('js/classie.js') }}"></script>
+
+
+
+<script src="{{ static('js/dummydata.js')}}"></script>
+
+
+
+<script src="{{ static('js/main.js')}}"></script>
+
+
+
+<script>
+
+
+
+(function() {
+
+
+
+var menuEl = document.getElementById('ml-menu'),
+
+
+
+mlmenu = new MLMenu(menuEl, {
+
+
+
+// breadcrumbsCtrl : true, // show breadcrumbs
+
+
+
+// initialBreadcrumb : 'all', // initial breadcrumb text
+
+
+
+backCtrl : false, // show back button
+
+
+
+// itemsDelayInterval : 60, // delay between each menu item sliding animation
+
+
+
+onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+
+
+
+});
+
+
+
+
+
+
+
+// mobile menu toggle
 
 
 
@@ -783,11 +918,27 @@ var openMenuCtrl = document.querySelector('.action--open'),
 
 
 
-closeMenuCtrl = document.querySelector('.action--close');openMenuCtrl.addEventListener('click', openMenu);
+closeMenuCtrl = document.querySelector('.action--close');
 
 
 
-closeMenuCtrl.addEventListener('click', closeMenu);function openMenu() {
+
+
+
+
+openMenuCtrl.addEventListener('click', openMenu);
+
+
+
+closeMenuCtrl.addEventListener('click', closeMenu);
+
+
+
+
+
+
+
+function openMenu() {
 
 
 
@@ -799,7 +950,15 @@ closeMenuCtrl.focus();
 
 
 
-}function closeMenu() {
+}
+
+
+
+
+
+
+
+function closeMenu() {
 
 
 
@@ -811,15 +970,39 @@ openMenuCtrl.focus();
 
 
 
-}// simulate grid content loading
+}
 
 
 
-var gridWrapper = document.querySelector('.content');function loadDummyData(ev, itemName) {
 
 
 
-ev.preventDefault();closeMenu();
+
+// simulate grid content loading
+
+
+
+var gridWrapper = document.querySelector('.content');
+
+
+
+
+
+
+
+function loadDummyData(ev, itemName) {
+
+
+
+ev.preventDefault();
+
+
+
+
+
+
+
+closeMenu();
 
 
 
@@ -859,7 +1042,15 @@ gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
 
 
 
-</body></html>
+</body>
+
+
+
+
+
+
+
+</html>
 
 
 
