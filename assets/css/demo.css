@@ -316,9 +316,10 @@ body #cdawrap a:hover.carbon-poweredby {
 }
 
 .menu {
-    top: 2rem;
-    height: 100vh;
+    top: 2rem !important;
+    height: 100vh !important;
 }
+
 body {
     background: #1c1d22;
 }
