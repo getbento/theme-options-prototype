@@ -314,3 +314,26 @@ body #cdawrap a:hover.carbon-poweredby {
 .bp-header {
     display: none;
 }
+
+.menu {
+    top: 2rem;
+    height: 100vh;
+}
+body {
+    background: #1c1d22;
+}
+#ml-menu:before {
+    content: "THEME OPTIONS";
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 20px;
+}
+.menu__wrap {
+    top: 4.5em;
+}
+.content {
+    background-image: url(http://getbento.imgix.net/accounts/bba6448ea388367541aa31bb6b77c149/media/images/9469500_SINGLE-SCROLL-LANDING.jpg);
+    min-height: 1000vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
