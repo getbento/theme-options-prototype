@@ -302,3 +302,15 @@ body #cdawrap a:hover.carbon-poweredby {
 		overflow: auto;
 	}
 }
+
+
+.info {
+    margin-top: 0;
+}
+.content img {
+    width: 100%;
+    position: absolute;
+}
+.bp-header {
+    display: none;
+}
